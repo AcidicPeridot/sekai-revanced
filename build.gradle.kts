@@ -7,7 +7,7 @@ plugins {
     signing
 }
 
-group = "app.revanced"
+group = "pjsekai.primarycolors"
 
 repositories {
     mavenCentral()
