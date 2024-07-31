@@ -35,14 +35,14 @@ kotlin {
 tasks {
     withType(Jar::class) {
         manifest {
-            attributes["Name"] = "ReVanced Patches template"
-            attributes["Description"] = "Patches template for ReVanced."
-            attributes["Version"] = version
+            attributes["Name"] = "Project Sekai: Primary Colors"
+            attributes["Description"] = "Patches for PJSK such as an English Dub and updated English dialogue."
+            attributes["Version"] = 1.0.0
             attributes["Timestamp"] = System.currentTimeMillis().toString()
-            attributes["Source"] = "git@github.com:revanced/revanced-patches-template.git"
-            attributes["Author"] = "ReVanced"
-            attributes["Contact"] = "contact@revanced.app"
-            attributes["Origin"] = "https://revanced.app"
+            attributes["Source"] = "git@github.com/AcidicPeridot/sekai-revanced.git"
+            attributes["Author"] = "AcidicPeridot"
+            attributes["Contact"] = "acidicperidot@gmail.com"
+            attributes["Origin"] = "https://www.youtube.com/@PJSKPrimaryColors"
             attributes["License"] = "GNU General Public License v3.0"
         }
     }
@@ -96,9 +96,9 @@ publishing {
             from(components["java"])
 
             pom {
-                name = "ReVanced Patches template"
-                description = "Patches template for ReVanced."
-                url = "https://revanced.app"
+                name = "Project Sekai: Primary Colors"
+                description = "Patches for PJSK such as an English Dub and updated English dialogue."
+                url = "https://www.youtube.com/@PJSKPrimaryColors"
 
                 licenses {
                     license {
@@ -108,15 +108,15 @@ publishing {
                 }
                 developers {
                     developer {
-                        id = "ReVanced"
-                        name = "ReVanced"
-                        email = "contact@revanced.app"
+                        id = "AcidicPeridot"
+                        name = "AcidicPeridot"
+                        email = "acidicperidot@gmail.com"
                     }
                 }
                 scm {
-                    connection = "scm:git:git://github.com/revanced/revanced-patches-template.git"
-                    developerConnection = "scm:git:git@github.com:revanced/revanced-patches-template.git"
-                    url = "https://github.com/revanced/revanced-patches-template"
+                    connection = "scm:git:git://github.com/AcidicPeridot/sekai-revanced.git"
+                    developerConnection = "scm:git:git@github.com/AcidicPeridot/sekai-revanced.git"
+                    url = "https://github.com/AcidicPeridot/sekai-revanced"
                 }
             }
         }
